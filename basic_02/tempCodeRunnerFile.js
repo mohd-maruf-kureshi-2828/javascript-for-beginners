@@ -1,0 +1,1 @@
+let mySym=Symbol("mysymbol") 
