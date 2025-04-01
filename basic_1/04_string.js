@@ -21,7 +21,8 @@ console.log(myName);
 
 
 
-
-
-
+//practice set
+// let UserName=prompt("Enter Your Name Without Any space");
+// let createUserName="@".concat(UserName).concat(UserName.length);
+// console.log(createUserName);
 
