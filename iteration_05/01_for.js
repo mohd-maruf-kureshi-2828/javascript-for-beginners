@@ -42,10 +42,17 @@ for(i=1;i<=50;i++){
     // console.log(`value is ${i}`);
 }
 
-for(i=1;i<=50;i++){
-    if(i==35){
-        console.log(`${i} is dectected`);
-        continue;
-    }
-    console.log(`value of i is ${i}`);
+// for(i=1;i<=50;i++){
+//     if(i==35){
+//         console.log(`${i} is dectected`);
+//         continue;
+//     }
+//     console.log(`value of i is ${i}`);
+// }
+
+//SUM OF NUMBER
+let sum=0;
+for(let i=1;i<=10;i++){
+    sum=sum+i;
 }
+console.log("sum=",sum)
