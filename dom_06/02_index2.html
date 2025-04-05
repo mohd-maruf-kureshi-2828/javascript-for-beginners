@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom 2</title>
+  </head>
+  <body></body>
+  <script>
+    let myBody = document.querySelector("body");
+    myBody.style.backgroundColor = "black";
+    myBody.style.color = "white";
+
+    //create h1 tag
+    // let h1=document.createElement('h1');
+    // console.log(h1);
+    // h1.className="heading one";
+    // h1.id=Math.round(Math.random()*10+1);
+    // h1.setAttribute("title","just for fun");
+    // // h1.innerText="Hello Coders";
+    // // document.body.appendChild(h1)
+    // let addText=document.createTextNode("Hello Coders")
+    // h1.appendChild(addText)
+    // document.body.appendChild(h1)
+
+    //to the help of this function we can create element we want
+    const justForfun = (tagName) => {
+      // Create browser instead of an attribute
+      let browser = document.createElement(tagName);
+      console.log(browser);
+
+      // Apply attributes and content to the browser
+      browser.className = "myClass";
+      browser.id = Math.round(Math.random() * 10 + 1);
+      browser.style.color = "green";
+      browser.innerText = "Hello Coder";
+      // Append it to the body
+      document.body.appendChild(browser);
+    };
+
+    justForfun("h"); // Call the function with a string
+  </script>
+</html>

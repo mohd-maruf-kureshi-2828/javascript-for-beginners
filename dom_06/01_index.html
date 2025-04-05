@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document object model</title>
+  </head>
+
+  <body>
+    <div class="items">
+      <div class="numbers">first</div>
+      <div class="numbers">Second</div>
+      <div class="numbers">Third</div>
+      <div class="numbers">Four</div>
+      <div class="numbers">Firth</div>
+      <div class="numbers">six</div>
+    </div>
+  </body>
+  <script>
+    let myBody = document.querySelector("body");
+    myBody.style.backgroundColor = "black";
+    myBody.style.color = "white";
+
+    let myItem = document.querySelector(".items");
+    // console.log((myItem.children[0].style.padding = "20px"));
+
+    // console.log(myItem.firstElementChild);
+    // console.log((myItem.lastElementChild.style.color = "orange"));
+
+    // for(i=0;i<myItem.child.length;i++){
+    //     console.log(myItem.child[i].innerHTML);
+    //  }
+
+    //child to parents target
+    let myChild = document.querySelector(".numbers");
+    // console.log(myChild);
+
+    // console.log(myChild.parentElement)
+    // console.log(myChild.nextElementSibling);
+
+    console.log("NODES :", myItem.childNodes);
+  </script>
+</html>
