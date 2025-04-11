@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse Event</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+ <script>
+    let box=document.querySelector(".box")
+    box.addEventListener("mouseover",()=>{
+        box.style.backgroundColor="blue"
+        box.innerHTML="hello"
+    });
+    box.addEventListener("mouseout",()=>{
+        box.style.backgroundColor="white"
+        box.innerHTML=""
+    });
+ </script>
+</html>
