@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      body {
+        background: #0f172a;
+        color: white;
+      }
+      .container{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>IPL</h1>
+      <!-- just for fun guys don't be serious but e sala paka...🍭 -->
+      <select id="city">
+        <option>Select Your Team👇</option>
+        <option value="Delhi😎">Delhi😎</option>
+        <option value="Mumbai👍">Mumbai👍</option>
+        <option value="rcb🍭">rcb🍭</option>
+      </select>
+    </div>
+  </body>
+  <script>
+    let select = document.querySelector("#city");
+    select.addEventListener("change", () => {
+      alert(`Your Team IS ${select.value}`);
+    });
+  </script>
+</html>
