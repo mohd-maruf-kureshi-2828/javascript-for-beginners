@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img id="gympic" src="https://pbs.twimg.com/media/FCKZOxRXEAIpdl1.jpg" alt="gym" width="200"></li>
+        <li><img  id="cool" src="https://pbs.twimg.com/media/E8u1Wo9VUAAnE2S.jpg" alt="cool" width="200"></li>
+        <li><img id="mahuva"src="https://pbs.twimg.com/media/FN0VzY0aQAItoP1?format=jpg&name=large" alt="mahuva" width="200"></li>
+    </ul>
+    
+</body>
+<script>
+   //
+
+
+   /*
+   document.getElementById('images').addEventListener('click',function(e){
+    console.log('inside the image sension')
+   },false)
+   document.getElementById('mahuva').addEventListener('click',function(e){
+    console.log('inside the mahuva image');  
+    e.stopPropagation()
+   },false)
+   */
+
+
+  //capturing mood
+  /*
+    document.getElementById('images').addEventListener('click',function(e){
+    console.log('inside the image sension')
+   },true)
+   document.getElementById('mahuva').addEventListener('click',function(e){
+    console.log('inside the mahuva image');  
+   },true)
+   */
+
+   //remove the image when your clicked
+   document.querySelector('#images').addEventListener('click',function(e){
+     console.log(e.target.parentNode)
+     let removeTheElement=e.target.parentNode
+    //  removeTheElement.remove()
+     removeTheElement.parentNode.removeChild(removeTheElement)
+   },false)
+
+
+</script>
+</html>

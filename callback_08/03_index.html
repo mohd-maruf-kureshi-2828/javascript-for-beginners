@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 3</title>
+</head>
+<body>
+    <h1>If Your Click In Start Button Printing My Name In Consoloe Window</h1>
+    <button id="start">Start Printing</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+      
+     let start=document.querySelector('#start')
+     let stop=document.querySelector('#stop')
+     let intervalId; // interval ID yahan store karenge
+    
+     
+    
+   start.addEventListener('click',()=>{
+      clearInterval(intervalId)
+       intervalId= setInterval(()=>{
+            console.log('maruf kureshi')
+        },2000)
+     })
+     stop.addEventListener('click',()=>{
+        clearInterval(intervalId)
+        console.log('stop printing');
+        
+     })
+</script>
+</html>

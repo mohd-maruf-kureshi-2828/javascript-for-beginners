@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <h1>Hello After Two Second BGCOLOR Color Going Red</h1>
+    <button>Click Here TO Stop</button>
+    
+</body>
+<script>
+   let myBody= document.querySelector('body')
+   let myButton=document.querySelector('button')
+   let stop=setTimeout(()=>{
+    myBody.style.backgroundColor='red'
+    
+    },2000)
+  
+    myButton.addEventListener('click',()=>{
+        clearTimeout(stop)
+    })
+    
+
+</script>
+</html>
