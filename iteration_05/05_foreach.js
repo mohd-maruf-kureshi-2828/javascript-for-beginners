@@ -28,6 +28,8 @@ let studentDetails=[
     
 ]
 studentDetails.forEach((accThename)=>{
-  console.log(accThename.name);
+  //console.log(accThename.name);
   
 })
+
+

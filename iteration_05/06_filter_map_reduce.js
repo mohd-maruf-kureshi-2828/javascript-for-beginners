@@ -82,7 +82,7 @@ let add=reduceNo.reduce(function(accumulator, currentValue){
     return accumulator + currentValue
 },0)
 
-// console.log(add);
+console.log(add);
 
 
 //second method
