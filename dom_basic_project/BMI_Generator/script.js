@@ -1,0 +1,27 @@
+let form=document.querySelector('form')
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+
+    let height=parseInt(document.querySelector('#height').value)
+    let weight=parseInt(document.querySelector('#weight').value)
+    let result=document.querySelector('#results')
+
+    if(height === "" || height < 0 || isNaN(height)){
+        result.innerHTML=`Please enter a valid value ${height} `
+    }else if(weight === ""  || weight < 0 || isNaN(weight)){
+        result.innerHTML=`plesse enter a valid value ${weight}`
+    }else{
+        let bmi=(weight / ((height*height)/10000)).toFixed(2)
+        result.innerHTML=`<h5>${bmi}</h5>`
+        if(weight<18.6 || weight > 18.6 && weight==24.4){
+            document.querySelector('#weight-guide').innerHTML=`Your Under Weight ${weight}`
+        }else{
+            document.querySelector('#weight-guide').innerHTML=`Your over Weight ${weight}`
+        }
+    } 
+
+
+
+
+})
