@@ -37,7 +37,7 @@ for(i=1;i<=10;i++){
 for(i=1;i<=50;i++){
     if(i==35){
         // console.log(`${i} is dectected`);
-        break;
+        break;  // 35 aate hi loop band!
     }
     // console.log(`value is ${i}`);
 }
@@ -45,7 +45,8 @@ for(i=1;i<=50;i++){
 // for(i=1;i<=50;i++){
 //     if(i==35){
 //         console.log(`${i} is dectected`);
-//         continue;
+//         continue; Sirf 35 ko skip karo, baaki chalne do
+}
 //     }
 //     console.log(`value of i is ${i}`);
 // }
