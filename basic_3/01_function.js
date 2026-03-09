@@ -46,6 +46,11 @@ function loginUser(username){
 }
 // console.log(loginUser());
 
+//rest operation rest operator use karne se humko jitne chaiye utne arguments di sakte hai
+function restOp(...numbers){
+    return numbers
+}
+// restOp(120,200,500,800) 
 
 function myNums(n1, n2, ...n3) {
     return [n1, n2, ...n3];
